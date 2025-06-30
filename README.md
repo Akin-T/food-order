@@ -1,34 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![pricepage](https://github.com/user-attachments/assets/e9598ee5-c5db-42b9-8b82-e8d342ad2eec)
 
-## Getting Started
+![loginpage](https://github.com/user-attachments/assets/dabc9530-b351-4e35-9b32-6c5e4e00e62f)
 
-First, run the development server:
+![productpage](https://github.com/user-attachments/assets/a0bac151-ab02-4ec1-a027-ddcaa461004d)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![adminpage](https://github.com/user-attachments/assets/2f0ba55b-e259-4d1c-9a47-e0a3272a76e5)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![orderpage](https://github.com/user-attachments/assets/2dc19b67-2d5d-465c-b45f-2bb7422e3856)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![sepet](https://github.com/user-attachments/assets/5935ac05-326f-4bc0-8849-ebed8df25b7a)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![registerpage](https://github.com/user-attachments/assets/b8ea238c-64e4-4ab5-a8a3-d59906227fbb)
