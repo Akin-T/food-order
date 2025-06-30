@@ -4,12 +4,14 @@ import { FaUserAlt, FaShoppingCart, FaSearch } from "react-icons/fa";
 import Search from "../ui/Search";
 import { GiHamburgerMenu, GiCancel } from "react-icons/gi";
 import { useRouter } from "next/router";
+import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const Header = () => {
 
     const [IsSearchModal, setIsSearchModal] = useState(false);
     const [IsMenuModal, setIsMenuModal] = useState(false);
-
+    const cart = useSelector((state) => state.cart);
     const router = useRouter();
 
     return (
@@ -21,18 +23,23 @@ const Header = () => {
                     }`}  >
 
                     <ul className="flex gap-x-2 sm:flex-row flex-col items-center">
+
                         <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-                            <a href="">Anasayfa</a>
+                            <Link href="/">Anasayfa</Link>
                         </li>
+
                         <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-                            <a href="">Menu</a>
+                            <Link href="/menu">Menu</Link>
                         </li>
+
                         <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-                            <a href="">Hakkımızda</a>
+                            <Link href="/about">Hakkımızda</Link>
                         </li>
+
                         <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-                            <a href="">Book Table</a>
+                            <Link href="/reservation">Rezervasyon</Link>
                         </li>
+
                     </ul>
                     {IsMenuModal && (
                         <button
@@ -43,19 +50,33 @@ const Header = () => {
                         </button>
                     )}
                 </nav>
+
                 <div className="flex gap-x-4 items-center">
-                    <a href="#">
-                        <FaUserAlt className="hover:text-primary transition-all" />
-                    </a>
-                    <a href="#">
-                        <FaShoppingCart className="hover:text-primary transition-all" />
-                    </a>
+
+                    <Link href="/auth/login">
+                        <span>
+                            <FaUserAlt className="hover:text-primary transition-all cursor-pointer " />
+                        </span>
+                    </Link>
+
+                    <Link href="/cart">
+                        <span className="relative" >
+                            <FaShoppingCart className="hover:text-primary transition-all cursor-pointer" />
+                            <span className="w-4 h-4 text-xs grid place-content-center rounded-full bg-primary absolute -top-2 -right-3 text-black font-bold">
+                                {cart.products.length === 0 ? "0" : cart.products.length}
+                            </span>
+                        </span>
+
+                    </Link>
+
                     <button onClick={() => setIsSearchModal(true)}>
-                        <FaSearch className="hover:text-primary transition-all" />
+                        <FaSearch className="hover:text-primary transition-all cursor-pointer" />
                     </button>
+
                     <a href="#" className="md:inline-block hidden sm">
                         <button className="btn-primary">Online Sipariş</button>
                     </a>
+
                     <button className="sm:hidden inline-block" onClick={() => setIsMenuModal(true)}
                     >
                         <GiHamburgerMenu className="text-xl hover:text-primary transition-all" />

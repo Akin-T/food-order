@@ -3,7 +3,9 @@ import Input from "./form/Input"
 import Title from "./ui/Title"
 import { useFormik } from "formik";
 import { reservationSchema } from '../schema/reservation';
+{
 
+}
 
 
 const Reservation = () => {
